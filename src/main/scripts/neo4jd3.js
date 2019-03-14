@@ -240,7 +240,7 @@ function Neo4jD3(_selector, _options) {
       .attr("width", '80px')
       .attr("height", '20px')
       .style("fill", function(d){
-        return "#bdc3c7";
+        return "#000000";
       })
       .attr('y', 24)
       .attr('x', -40)
@@ -253,6 +253,7 @@ function Neo4jD3(_selector, _options) {
         return truncateText(node.properties[options.labelProperty], 13);
       })
       .attr('font-size', 10)
+      .attr('color', '#bdc3c7')
       .attr('x', function(node){
         return 0;
         //return calculateXLocation(node.properties.name);
@@ -284,11 +285,11 @@ function Neo4jD3(_selector, _options) {
         }
       });
 
-    g.append("rect")
-      .attr("width", '20px')
-      .attr("height", '20px')
-      .style("fill", "#444")
-      .style("stroke", "#54b3ff")
+    g.append('rect')
+      .attr('width', '20px')
+      .attr('height', '20px')
+      .style('fill', '#54b3ff')
+      .style('stroke', '#54b3ff')
       .attr('rx', 10)
       .attr('ry', 10);
     
