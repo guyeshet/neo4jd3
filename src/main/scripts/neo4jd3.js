@@ -240,7 +240,7 @@ function Neo4jD3(_selector, _options) {
       .attr("width", '80px')
       .attr("height", '20px')
       .style("fill", function(d){
-        return "#000000";
+        return "transparent";
       })
       .attr('y', 24)
       .attr('x', -40)
@@ -253,7 +253,7 @@ function Neo4jD3(_selector, _options) {
         return truncateText(node.properties[options.labelProperty], 13);
       })
       .attr('font-size', 10)
-      .attr('color', '#bdc3c7')
+      .attr('fill', '#e4e4e4')
       .attr('x', function(node){
         return 0;
         //return calculateXLocation(node.properties.name);
