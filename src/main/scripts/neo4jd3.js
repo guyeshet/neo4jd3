@@ -253,7 +253,7 @@ function Neo4jD3(_selector, _options) {
         return truncateText(node.properties[options.labelProperty], 13);
       })
       .attr('font-size', 10)
-      .attr('fill', '#e4e4e4')
+      .attr('fill', '#fefefe')
       .attr('x', function(node){
         return 0;
         //return calculateXLocation(node.properties.name);
